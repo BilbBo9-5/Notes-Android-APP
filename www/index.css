@@ -1,0 +1,72 @@
+
+
+*{
+    user-select: none;
+}
+body{
+    color: var(--text-color);
+}
+.not-item{
+    width: 100%;
+    min-height: 30px;
+    margin: 20px 0 0 0;
+    padding: 5px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: var(--font-size);
+    background: var(--them);
+    font-weight: 900;
+}
+.not-item > p{
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis;
+    padding: 0 5px 0 0;
+    margin: 0;
+}
+.togler{
+    background: var(--background-item-them);
+    height: 0;
+    /*overflow: auto;*/
+    overflow: hidden;
+}
+.content-togler{
+    width: 100%;
+    padding: 20px 20px;
+    height: fit-content;
+    font-size: var(--font-size);
+}
+.content-togler > div{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    height: 25px;
+    font-size: 30px;
+}
+.icon{
+    font-size: var(--font-size);
+}
+
+.list-height{
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.list-height > li {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.list-height > li > input, .list-height > li > select{
+    width: 100px;
+    padding: 0;
+    height: 27px;
+}

@@ -1,0 +1,100 @@
+
+:root {
+    --font-size : calc(20px);
+    --them : #f1d29c;
+    --background-them : #271b1b;
+    --background-content-them : #271b1b;
+    --background-item-them : #392828;
+    --text-color: #696969;
+}
+/* хром, сафари */
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    -ms-overflow-style: none;
+    margin: 0;
+}
+body::-webkit-scrollbar { width: 0; }
+/*header*/
+.header{
+    height: 50px;
+    width: 100%;
+    background: var(--them);
+    font-size: var(--font-size);
+    font-weight: 900;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title{
+    margin: 0 0 0 40px;
+}
+.header-sating{
+    margin: 0 40px 0 0 ;
+    font-size: 35px;
+    color: var(--text-color);
+}
+/*container*/
+.container{
+    width: 100%;
+    background: var(--background-them);
+    min-height: calc(100vh - 50px);
+}
+/*content-container*/
+.content-wrapper{
+    height: fit-content;
+    padding: 10px 20px;
+    background: var(--background-content-them);
+}
+/*btn add*/
+.addNew-btn{
+    width: fit-content;
+    margin: 20px 20px 0 auto;
+    padding: 10px 10px 10px 0;
+    height: 40px;
+    background: var(--them);
+    border-radius: 20px;
+    font-size: var(--font-size);
+    /*border:solid 2px white;*/
+    border-left: none;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addNew-btn > span:first-child {
+    color: var(--text-color);
+    background: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addNew-btn > span:last-child {
+    color: var(--text-color);
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+/*nav*/
+.nav-wrapper{
+    width: 100%;
+    height: 0;
+    background: var(--background-item-them);
+    overflow: hidden;
+}
+span > span{
+    font-style: unset;
+    font-weight: unset;
+    text-decoration: unset;
+}
+i, p, b, u, span{
+    background: inherit !important;
+}

@@ -1,0 +1,89 @@
+
+
+
+body{
+    color: var(--text-color);
+}
+/*inputs*/
+.notes-name::selection, .notes-contain::selection {
+    background: #232323;
+    color: lightseagreen;
+    cursor: zoom-in;
+}
+.notes-name{
+    width: 100%;
+    height: 40px;
+    font-size: var(--font-size);
+    user-select: auto;
+
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: var(--background-item-them);
+    color: var(--text-color);
+}
+.__editor{
+    width: 100%;
+    height: calc(100vh - 450px);
+    font-size: var(--font-size);
+    resize: none;
+    user-select: auto;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+.__editor{
+    background: var(--background-item-them) !important;
+    padding: 10px !important;
+    border: none !important;
+    color: var(--text-color) !important;
+    margin: 20px 0 !important;
+}
+
+
+
+/*tools*/
+.wrapper-revers{
+       display: flex;
+       flex-direction: column-reverse;
+   }
+.__toolbar{
+    display: block !important;
+    background: var(--background-item-them);
+    padding: 0 10px calc(var(--font-size) / 2) 10px !important;
+}
+.__toolbar > span{ display: none}
+.__toolbar-item{
+    margin-right: 0 !important;
+    margin-top: calc(var(--font-size) / 2 );
+    background: var(--background-item-them) !important;
+    font-size: calc(var(--font-size) * 0.7);
+    color: var(--text-color);
+    border: solid 2px var(--text-color) !important;
+    min-width: unset !important;
+    padding: 0 !important;
+    height: calc(var(--font-size) * 1.5) !important;
+
+}
+select[title="Styles"] {width: 45%;}
+select[title="Font"]{width: 45%;margin-left: 10%;}
+button[title="Bold"]{ width: 11%;}
+button[title="Italic"]{ width: 11%; margin-left: 6%;}
+button[title="Underline"]{ width: 11%; margin-left: 6%;}
+input[title="Text color"]{ width: 45%; margin-left: 10%; padding: 0; float: right;}
+button[title="Left align"]{width: 11%;}
+button[title="Center align"]{width: 11%; margin-left: 6%;}
+button[title="Right align"]{width: 11%; margin-left: 6%;}
+button[title="Numbered list"]{width: 11%; margin-left: 10%;}
+button[title="Bulleted list"]{width: 11%; margin-left: 6%;}
+button[title="Decrease indent"]{width: 11%; margin-left: 6%;}
+button[title="Increase indent"]{width: 11%;}
+button[title="Clear formatting"]{width: 11%; float: right;}
+
+
+/*list Item*/
+ol{
+    padding-left: 50px;
+}
+ul{
+    padding-left: 32px;
+}

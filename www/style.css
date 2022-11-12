@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'castom';
+  src:  url('castom.eot?ntj9b1');
+  src:  url('castom.eot?ntj9b1#iefix') format('embedded-opentype'),
+    url('castom.ttf?ntj9b1') format('truetype'),
+    url('castom.woff?ntj9b1') format('woff'),
+    url('castom.svg?ntj9b1#castom') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fa-"], [class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'castom' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-align-center:before {
+  content: "\e900";
+}
+.fa-align-left:before {
+  content: "\e901";
+}
+.fa-align-right:before {
+  content: "\e902";
+}
+.fa-bold:before {
+  content: "\e903";
+}
+.fa-eraser:before {
+  content: "\e904";
+}
+.fa-indent:before {
+  content: "\e905";
+}
+.fa-italic:before {
+  content: "\e906";
+}
+.fa-list-ol:before {
+  content: "\e907";
+}
+.fa-list-ul:before {
+  content: "\e908";
+}
+.fa-underline:before {
+  content: "\e909";
+}

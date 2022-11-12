@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#f1d29c"/>
+    <link rel="apple-touch-icon" href="maskable_icon_x192%20(2).png">
+    <link rel="apple-touch-icon" href="maskable_icon_x128%20(2).png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="ganeral.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Заметки</div>
+        <div class="header-sating">&#9881;</div>
+    </div>
+
+
+    <div class="nav-wrapper">
+        <ul class="list-height">
+            <li>
+                <label for="them">тема</label>
+                <input type="color" id="them" class="them input">
+            </li>
+            <li>
+                <label for="background-them">фоновый цвет</label>
+                <input type="color" id="background-them" class="background-them input">
+            </li>
+            <li>
+                <label for="background-content-them">фоновый цвет контента</label>
+                <input type="color" id="background-content-them" class="background-content-them input">
+            </li>
+            <li>
+                <label for="background-item-them">фон контекста</label>
+                <input type="color" id="background-item-them" class="background-item-them input">
+            </li>
+            <li>
+                <label for="text-color">цвет текста</label>
+                <input type="color" id="text-color" class="text-color input">
+            </li>
+            <li>
+                <label for="font-size">размер текста</label>
+                <input type="number" min="10" max="27" id="font-size" class="font-size input">
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="inner"></div>
+        </div>
+        <div class="addNew-btn">
+            <span>+</span>
+            <span>добавить</span>
+        </div>
+    </div>
+</body>
+</html>
